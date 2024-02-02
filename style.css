@@ -1,12 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Source+Code+Pro&display=swap');
 
-@font-face {
-    font-family: "Didot-Bold";
-    src: url("./Assets/Font/Didot\ LT\ Std\ Bold/Didot-Bold.otf") format("opentype");
-    font-weight: bold;
-    font-style: normal;
-}
-
 /* custom scroll bar */
 
 /* Width */
@@ -30,9 +23,10 @@
     --mid-blue: #2978B5;
     --dark-blue: #0061A8;
     --background-middle: #FBE0C4 ;
-    --font-header: "Didot-Bold", "Helvetica", "sans-serif";
-    --sub-heading: "Montserrat", "Helvetica", "sans-serif";
-    --font-content: "Source Code Pro", "Helvetica", "sans-serif";
+    --border-black: #131313;
+    --font-header: "Poppins", "Helvetica", "sans-serif";
+    --sub-heading: "Poppins", "Helvetica", "sans-serif";
+    --font-content: "Poppins", "Helvetica", "sans-serif";
 }
 
 * {
@@ -54,7 +48,6 @@ h1, h2, h3 {
 /* Main First Section Start */
 
 .hero-section {
-    flex-wrap: wrap;
     background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1920' height='1260' preserveAspectRatio='none' viewBox='0 0 1920 1260'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1008%26quot%3b)' fill='none'%3e%3crect width='1920' height='1260' x='0' y='0' fill='%231e3266'%3e%3c/rect%3e%3cpath d='M1952 1260L0 1260 L0 696.57Q132.2 668.77%2c 160 800.96Q220.88 701.84%2c 320 762.71Q313.21 659.92%2c 416 653.14Q484.98 562.12%2c 576 631.09Q706.98 602.07%2c 736 733.04Q796.16 633.2%2c 896 693.37Q969.75 671.12%2c 992 744.86Q1115.09 707.95%2c 1152 831.04Q1201.94 720.98%2c 1312 770.92Q1336.2 635.12%2c 1472 659.32Q1540.46 567.78%2c 1632 636.24Q1772.06 616.3%2c 1792 756.35Q1855.03 659.38%2c 1952 722.4z' fill='%23182f5d'%3e%3c/path%3e%3cpath d='M2080 1260L0 1260 L0 974.13Q-45.24 832.88%2c 96 787.64Q230.34 761.99%2c 256 896.33Q369 849.33%2c 416 962.32Q469.99 920.31%2c 512 974.3Q575.47 941.77%2c 608 1005.24Q646.41 947.65%2c 704 986.06Q717.32 839.38%2c 864 852.69Q955.3 784%2c 1024 875.3Q1050.08 805.38%2c 1120 831.45Q1177.21 792.66%2c 1216 849.88Q1302.42 840.3%2c 1312 926.72Q1324.94 779.66%2c 1472 792.6Q1587.65 812.25%2c 1568 927.9Q1649.78 913.68%2c 1664 995.46Q1667.69 839.15%2c 1824 842.84Q1856.53 779.37%2c 1920 811.9Q1990.5 722.4%2c 2080 792.9z' fill='%2325467d'%3e%3c/path%3e%3cpath d='M2016 1260L0 1260 L0 1022.11Q115.79 1041.9%2c 96 1157.7Q85.47 987.17%2c 256 976.65Q288.78 913.43%2c 352 946.22Q425.82 924.04%2c 448 997.85Q550.56 940.41%2c 608 1042.98Q719.99 994.97%2c 768 1106.95Q839.5 1018.45%2c 928 1089.95Q928.4 994.35%2c 1024 994.75Q1094.63 905.38%2c 1184 976.02Q1251.01 947.03%2c 1280 1014.05Q1426.53 1000.58%2c 1440 1147.11Q1445.87 1056.98%2c 1536 1062.85Q1561.37 992.22%2c 1632 1017.59Q1697.23 986.82%2c 1728 1052.05Q1770.17 998.22%2c 1824 1040.39Q1915.93 1036.32%2c 1920 1128.25Q1933.07 1045.32%2c 2016 1058.39z' fill='%23356cb1'%3e%3c/path%3e%3cpath d='M1984 1260L0 1260 L0 1320.5Q-23.47 1201.03%2c 96 1177.56Q126.49 1112.05%2c 192 1142.53Q297.6 1088.13%2c 352 1193.73Q456.11 1137.84%2c 512 1241.94Q549.96 1119.9%2c 672 1157.87Q732.73 1058.6%2c 832 1119.33Q891.62 1082.94%2c 928 1142.56Q1015.72 1134.28%2c 1024 1222Q1115.22 1217.22%2c 1120 1308.45Q1157.74 1250.19%2c 1216 1287.93Q1268.17 1180.11%2c 1376 1232.28Q1432.84 1193.12%2c 1472 1249.96Q1557.68 1175.64%2c 1632 1261.33Q1737.53 1206.86%2c 1792 1312.38Q1802.38 1226.76%2c 1888 1237.13Q1919.13 1172.27%2c 1984 1203.4z' fill='white'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1008'%3e%3crect width='1920' height='1260' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e") no-repeat center fixed;
     display: flex;
     justify-content: center;
@@ -65,6 +58,7 @@ h1, h2, h3 {
     height: 100vh;
     padding: 0 5em;
     color: var(--white);
+    flex-wrap: wrap;
 }
 
 /* .hero-section .left-side-hero{
@@ -77,6 +71,7 @@ h1, h2, h3 {
 
 .hero-section h1 {
     font-size: 3em;
+    font-weight: 700;
 }
 
 .hero-section .heading-context {
@@ -126,7 +121,7 @@ h1, h2, h3 {
 
 .about-section {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     background-color: var(--background-middle);
     margin-left: auto;
@@ -147,7 +142,7 @@ h1, h2, h3 {
 
 .about-context {
     padding-top: 2em;
-    width: 80%;
+    width: 90%;
 }
 
 .about-section .about-context p{
@@ -168,35 +163,44 @@ h1, h2, h3 {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    flex-direction: row;
     padding: 3em 5em;
     font-family: var(--font-content);
 }
 
-.work-content {
+.middle-work-section h2 {
+    padding-bottom: 1em;
+    font-size: 3em;
+}
+
+.up-side-list, .down-side-list{
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: stretch;
 }
 
-.work-header-list{
-    columns: 100px 2;
-    -webkit-columns: 2;
-    -moz-columns: 2;
-}
+.card {
+    width: 100%;
+    padding: 0.4em;
+  }
 
-.work-header-list li {
-    padding: 1em;
-}
+.card-image {
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+  }
 
-.work-header-list a{
-    text-decoration: none;
-    color: var(--black);
+.card-image img {
+    object-fit: cover;
+    width: auto;
+    max-width: 100%;
+    border-radius: 6px 6px 6px 6px;
+    height: auto;
 }
-.work-header-list a:hover{
-    text-decoration: none;
-    color: var(--mid-blue);
-}
+  
+  .card-image:hover {
+    transform: scale(0.98);
+  }
 
 /* Skills start*/
 
@@ -204,7 +208,6 @@ h1, h2, h3 {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: row;
     background-color: var(--background-middle);
     padding: 3em 5em;
     font-family: var(--sub-heading);
@@ -212,15 +215,46 @@ h1, h2, h3 {
 }
 
 .skills-section h3 {
-    font-size: 2.5em;
+    font-size: 3em;
 }
 
-.skills-inner-section {
-    float: left;
-    width: 25%;
-    padding: 8px;
-    
+.skills-subheader {
+    padding-bottom: 2em;
+    font-size: 1.5em;
 }
+
+.skills-card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
+    grid-gap: 1rem;
+    justify-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.skills-card {
+    border: 2px solid var(--border-black);
+    box-shadow: 4px 4px var(--black);
+    border-radius: 5px;
+    padding: 1em;
+    margin: 0.4em;
+    height: auto;
+}
+
+.skills-section .skills-card img{
+    width: 20%;
+}
+
+.skills-section h5 {
+    font-size: 1.2em;
+    padding: 0.7em 0;
+}
+
+.skills-section p {
+    line-height: 1.5em;
+}
+
+/* Skills end */
 
 .header-table {
   list-style-type: none;
@@ -248,12 +282,6 @@ h1, h2, h3 {
   padding: 20px;
   text-align: center;
 }
-
-.skills-container::-webkit-scrollbar {
-    display: none;
-}
-
-/* Skills end */
 
 /* Main Last Section Start */
 
@@ -298,24 +326,34 @@ input[type=text],input[type=email], select, textarea {
 
 /* TABLET RESPONSIVE */
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
 
     .hero-section h1 {
         font-size: 3.5em;
     }
 
     .hero-section .left-side-hero {
-        height: 40em;
+        height: 30em;
     }
 
     .about-section {
         flex-wrap: wrap;
         width: 100%;
-        padding: 0;
+        padding: 1.5em;
     }
 
-    .left-about, .right-about, .skills-container, .about-context {
+    .about-inner-container {
+        gap: 1rem;
+    }
+
+    .left-about, .right-about, .skills-section, .about-context {
         width: 100%;
+    }
+
+    .work-header-list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }
 
@@ -324,7 +362,8 @@ input[type=text],input[type=email], select, textarea {
 @media only screen and (max-width: 480px) {
 
     .hero-section {
-        height: 40vh;
+        padding: 3em 2em;
+        flex: wrap;
     }
 
     .hero-section .heading-context {
@@ -332,11 +371,11 @@ input[type=text],input[type=email], select, textarea {
     }
 
     .hero-section h1 {
-        font-size: 3em;
+        font-size: 2.2em;
+        font-weight: 600;
     }
 
     .hero-section .left-side-hero {
-        height: 40em;
         padding: 0 1.5em;
     }
 
