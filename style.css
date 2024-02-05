@@ -168,21 +168,25 @@ h1, h2, h3 {
     font-family: var(--font-content);
 }
 
-.middle-work-section h2 {
+.work-content {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+.work-section h2 {
     padding-bottom: 1em;
     font-size: 3em;
 }
 
-.up-side-list, .down-side-list{
-    display: flex;
-    align-items: center;
-    justify-content: stretch;
-}
-
 .card {
+    grid-column:span 3;
     width: 100%;
     padding: 0.4em;
   }
+
+.col2 {
+    grid-column:span 2;
+}
 
 .card-image {
     width: 100%;
@@ -286,7 +290,11 @@ h1, h2, h3 {
 /* Main Last Section Start */
 
 .contact-section {
+    display:flex;
+    justify-content: center;
+    align-items: center;
     font-family: var(--font-content);
+    background-color: var(--background-middle);
 }
 
 .left-contact {
@@ -294,8 +302,14 @@ h1, h2, h3 {
     justify-content: center;
     align-items: center;
     border-radius: 5px;
-    background-color: var(--background-middle);
     padding: 20px;
+    flex-direction: column;
+}
+
+.left-contact h2 {
+    align-items: flex-start;
+    font-size: 2em;
+    padding-bottom: 1em;
 }
 
 input[type=text],input[type=email], select, textarea {
@@ -321,6 +335,21 @@ input[type=text],input[type=email], select, textarea {
   input[type=submit]:hover {
     background-color: var(--dark-blue);
   }
+
+  .right-contact {
+    height: auto;
+  }
+
+  .right-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .right-container a img, .right-container a {
+    width: 15%;
+} */
+  
 
 /* Main Last Section End */
 
@@ -350,10 +379,22 @@ input[type=text],input[type=email], select, textarea {
         width: 100%;
     }
 
+    .skills-card-container {
+        grid-template-columns: repeat(2 , minmax(16rem, 1fr));
+    }
+
     .work-header-list {
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+
+    .skills-card-container, .work-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
     }
 }
 
@@ -385,5 +426,13 @@ input[type=text],input[type=email], select, textarea {
     
     .about-context {
         width: 100%;
+    }
+
+    .skills-card-container, .work-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
     }
 }
