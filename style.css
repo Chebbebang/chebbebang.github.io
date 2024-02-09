@@ -5,17 +5,17 @@
 /* Width */
 ::-webkit-scrollbar {
     width: 12px;
-  }
-   
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
     background: rgb(198, 203, 233); 
-  }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
     background: lightslategray; 
-  }
+}
 
 :root {
     --white: #fff;
@@ -24,8 +24,8 @@
     --dark-blue: #0061A8;
     --background-middle: #FBE0C4 ;
     --border-black: #131313;
-    --font-header: "Poppins", "Helvetica", "sans-serif";
-    --sub-heading: "Poppins", "Helvetica", "sans-serif";
+    --font-header: "Montserrat", "Helvetica", "sans-serif";
+    --sub-heading: "Montserrat", "Helvetica", "sans-serif";
     --font-content: "Poppins", "Helvetica", "sans-serif";
 }
 
@@ -61,9 +61,6 @@ h1, h2, h3 {
     flex-wrap: wrap;
 }
 
-/* .hero-section .left-side-hero{
-} */
-
 .hero-section p.sub-heading {
     margin-bottom: 1em;
     font-family: var(--sub-heading);
@@ -79,6 +76,19 @@ h1, h2, h3 {
     font-size: 1.2em;
     width: 100%;
     margin-top: 1em;
+}
+
+.heading-context ul{
+    display: flex;
+    flex-direction: row;
+}
+
+.heading-context :not(li:last-child) {
+    padding-right: 10px;
+}
+
+.heading-context a {
+    color: var(--white);
 }
 
 /* Main First Section End */
@@ -182,7 +192,7 @@ h1, h2, h3 {
     grid-column:span 3;
     width: 100%;
     padding: 0.4em;
-  }
+}
 
 .col2 {
     grid-column:span 2;
@@ -192,7 +202,7 @@ h1, h2, h3 {
     width: 100%;
     height: 100%;
     border-radius: 6px;
-  }
+}
 
 .card-image img {
     object-fit: cover;
@@ -201,10 +211,10 @@ h1, h2, h3 {
     border-radius: 6px 6px 6px 6px;
     height: auto;
 }
-  
-  .card-image:hover {
+
+.card-image:hover {
     transform: scale(0.98);
-  }
+}
 
 /* Skills start*/
 
@@ -261,13 +271,13 @@ h1, h2, h3 {
 /* Skills end */
 
 .header-table {
-  list-style-type: none;
-  border: 2px solid var(--mid-blue);
-  border-radius: 7px;
-  margin: 0;
-  padding: 0;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
+list-style-type: none;
+border: 2px solid var(--mid-blue);
+border-radius: 7px;
+margin: 0;
+padding: 0;
+-webkit-transition: 0.3s;
+transition: 0.3s;
 }
 
 .header-table:hover {
@@ -275,16 +285,16 @@ h1, h2, h3 {
 }
 
 .header-table .main-head {
-  background-color: var(--mid-blue);
-  color: var(--white);
-  font-size: 19px;
+background-color: var(--mid-blue);
+color: var(--white);
+font-size: 19px;
 }
 
 .header-table li {
-  background-color: var(--white);
-  border-bottom: 1px solid var(--mid-blue);
-  padding: 20px;
-  text-align: center;
+background-color: var(--white);
+border-bottom: 1px solid var(--mid-blue);
+padding: 20px;
+text-align: center;
 }
 
 /* Main Last Section Start */
@@ -295,65 +305,63 @@ h1, h2, h3 {
     align-items: center;
     font-family: var(--font-content);
     background-color: var(--background-middle);
+    flex-direction: column;
+    padding: 3em 5em;
+}
+
+.inner-contact {
+    display: inherit;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
 }
 
 .left-contact {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     border-radius: 5px;
     padding: 20px;
-    flex-direction: column;
 }
 
-.left-contact h2 {
-    align-items: flex-start;
+.left-contact span {
+    line-height: 2em;
+}
+
+.left-contact span {
+    color: var(--black);
+}
+
+.contact-section h2 {
     font-size: 2em;
-    padding-bottom: 1em;
+    padding-bottom: 10px;
 }
 
-input[type=text],input[type=email], select, textarea {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    margin-top: 6px;
-    margin-bottom: 16px;
-    resize: vertical;
-  }
-  
-  input[type=submit] {
-    background-color: var(--mid-blue);
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  input[type=submit]:hover {
-    background-color: var(--dark-blue);
-  }
-
-  .right-contact {
+.right-contact {
     height: auto;
-  }
-
-  .right-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    overflow: hidden;
 }
 
-/* .right-container a img, .right-container a {
-    width: 15%;
-} */
-  
+.right-contact :not(li:last-child) {
+    padding-right: 10px;
+}
+
+.right-container-list {
+    display: flex;
+    flex-direction: row;
+}
+
+.right-container-list a {
+    color: var(--black)
+}
 
 /* Main Last Section End */
 
 /* TABLET RESPONSIVE */
+
+@media only screen and (max-width: 1080px) { 
+    .skills-card-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+    }
+}
 
 @media only screen and (max-width: 767px) {
 
@@ -375,8 +383,23 @@ input[type=text],input[type=email], select, textarea {
         gap: 1rem;
     }
 
+    .about-inner-container {
+        flex-direction: column;
+    }
+
     .left-about, .right-about, .skills-section, .about-context {
         width: 100%;
+    }
+
+    .right-about {
+        display: inherit;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .right-about img{
+        padding-top: 10px;
+        max-width: 70%;
     }
 
     .skills-card-container {
@@ -394,7 +417,10 @@ input[type=text],input[type=email], select, textarea {
         justify-content: center;
         align-items: center;
         flex-direction: column;
+    }
 
+    .right-contact :not(li:last-child) {
+        padding-right: 5px;
     }
 }
 
@@ -433,6 +459,18 @@ input[type=text],input[type=email], select, textarea {
         justify-content: center;
         align-items: center;
         flex-direction: column;
+    }
 
+    .inner-contact {
+        align-items: flex-start;
+        flex-direction: column-reverse;
+    }
+
+    .left-contact {
+        padding-left: 0;
+    }
+
+    .right-container-list {
+        flex-direction: row;
     }
 }
