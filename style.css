@@ -474,6 +474,29 @@ text-align: center;
     }
 }
 
+/* 630px Responsive */
+
+@media only screen and (max-width: 630px) {
+
+    .left-contact {
+        margin-top: 15px;
+        display: flex;
+        text-align: center;
+    }
+
+    .right-container-list {
+        display: flex;
+        justify-content: center;
+    }
+
+    .inner-contact {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+}
+
 /* MOBILE RESPONSIVE */
 
 @media only screen and (max-width: 480px) {
@@ -544,6 +567,7 @@ text-align: center;
 
     .left-contact {
         padding-left: 0;
+        text-align: start;
     }
 
     .right-container-list {
