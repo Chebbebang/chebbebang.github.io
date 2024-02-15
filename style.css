@@ -505,6 +505,10 @@ text-align: center;
         padding: 0 1.5em;
     }
 
+    .about-section {
+        padding: 1.5em;
+    }
+
     .left-about, .right-about {
         width: 100%;
     }
@@ -512,6 +516,10 @@ text-align: center;
     .about-context {
         width: 100%;
     }
+
+    .skills-subheader {
+        padding-bottom: 15px;
+    } 
 
     .skills-card-container, .work-content {
         display: flex;
@@ -522,6 +530,10 @@ text-align: center;
 
     .work-section, .skills-section, .contact-section {
         padding: 1em;
+    }
+
+    .hero-section, .work-section, .skills-section {
+        padding-bottom: 32px;
     }
 
     .inner-contact {
