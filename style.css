@@ -402,12 +402,25 @@ text-align: center;
 
 @media only screen and (max-width: 767px) {
 
+    .hero-section {
+        overflow: hidden;
+    }
+
     .hero-section h1 {
         font-size: 3.5em;
     }
 
     .hero-section .left-side-hero {
         height: 30em;
+    }
+
+    .heading-context li {
+        font-size: 16px;
+        overflow: hidden;
+    }
+
+    .heading-context :not(li:last-child) {
+        margin-right: 7px;
     }
 
     .about-section {
@@ -466,7 +479,7 @@ text-align: center;
 @media only screen and (max-width: 480px) {
 
     .hero-section {
-        padding: 3em 2em;
+        padding: 3em 1em;
         flex: wrap;
     }
 
@@ -477,6 +490,15 @@ text-align: center;
     .hero-section h1 {
         font-size: 2.2em;
         font-weight: 600;
+    }
+
+    .heading-context :not(li:last-child) {
+        margin-right: 5px;
+    }
+
+    .heading-context li {
+        font-size: 14px;
+        overflow: hidden;
     }
 
     .hero-section .left-side-hero {
@@ -498,9 +520,14 @@ text-align: center;
         flex-direction: column;
     }
 
+    .work-section, .skills-section, .contact-section {
+        padding: 1em;
+    }
+
     .inner-contact {
         align-items: flex-start;
         flex-direction: column-reverse;
+        overflow: hidden;
     }
 
     .left-contact {
