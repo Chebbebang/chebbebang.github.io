@@ -207,8 +207,13 @@ h1, h2, h3 {
 }
 
 .work-section h2 {
-    padding-bottom: 1em;
     font-size: 3em;
+}
+
+.work-subheader {
+    padding-bottom: 2em;
+    font-size: 1.5em;
+    font-weight: 100;
 }
 
 .card {
