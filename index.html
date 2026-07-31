@@ -4,47 +4,92 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chebb Jenson Magallano</title>
+    <title>Chebb Jenson Magallano — Web Developer & SEO Specialist</title>
+    <meta name="description" content="Chebb Jenson Magallano is a web developer and SEO specialist crafting immersive digital experiences that blend creativity with technology.">
+    <meta name="author" content="Chebb Jenson Magallano">
+    <meta name="theme-color" content="#1e3266">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Chebb Jenson Magallano — Web Developer & SEO Specialist">
+    <meta property="og:description" content="I create, initiate & innovate. Crafting immersive digital experiences that blend creativity with technology.">
+    <meta property="og:image" content="./Assets/Img/CoffeeDoddle.svg">
+    <meta property="og:url" content="https://chebby.github.io/">
+    <meta property="og:site_name" content="Chebb Jenson Magallano Portfolio">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Chebb Jenson Magallano — Web Developer & SEO Specialist">
+    <meta name="twitter:description" content="I create, initiate & innovate. Crafting immersive digital experiences that blend creativity with technology.">
+
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>&#9749;</text></svg>">
     <link rel="stylesheet" type="text/css" href="./style.css">
+    <script>document.documentElement.classList.add('js');</script>
+
+    <!-- JSON-LD structured data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Chebb Jenson Magallano",
+        "jobTitle": "Web Developer / SEO Specialist",
+        "url": "https://chebby.github.io/",
+        "email": "mailto:chebbv@gmail.com",
+        "sameAs": ["https://www.linkedin.com/in/chebbm/"]
+    }
+    </script>
+
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-68WF5DDWVD"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
-
         gtag('config', 'G-68WF5DDWVD');
     </script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="./script.js" defer></script>
 </head>
 <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <!-- Navbar Start -->
+    <nav class="navbar" aria-label="Main navigation">
+        <a href="#" class="nav-logo" aria-label="Back to top">CHEBB<span>.</span></a>
+        <ul class="nav-links">
+            <li><a href="#About" class="nav-link">About</a></li>
+            <li><a href="#Work" class="nav-link">Work</a></li>
+            <li><a href="#Skills" class="nav-link">Skills</a></li>
+            <li><a href="#contact-section" class="nav-link">Contact</a></li>
+        </ul>
+    </nav>
+    <!-- Navbar End -->
+
     <!-- Hero Section Begin -->
-    <main class="hero-section">
+    <main id="main" class="hero-section">
         <div class="left-side-hero">
             <p class="sub-heading">Hello, I am</p>
             <h1>CHEBB. <br>
-                I CREATE, INITIATE & INNOVATE </h1>
+                I CREATE, INITIATE &amp; INNOVATE </h1>
             <div class="heading-context">
                 <p>Web Developer / SEO Specialist</p>
             </div>
             <div class="heading-context">
                 <ul>
-                    <li><a href="https://www.linkedin.com/in/chebbm/" target="_blank">LinkedIn</a></li>
-                    <li><a href="https://drive.google.com/file/d/1C0qPZI37gGOHAZaD30dm-w6ZxVHQ9xyE/view?usp=sharing" target="_blank">Resume</a></li>
+                    <li><a href="https://www.linkedin.com/in/chebbm/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+                    <li><a href="https://drive.google.com/file/d/1C0qPZI37gGOHAZaD30dm-w6ZxVHQ9xyE/view?usp=sharing" target="_blank" rel="noopener noreferrer">Resume</a></li>
                     <li><a href="mailto:chebbv@gmail.com">Let's Talk</a></li>
                 </ul>
             </div>
         </div>
         <div class="hero-scroll">
-            <p><a href="#About" class="about_scroll">Scroll Down <br> <span class="hero-arrow">&#8595;</a></span></p>
+            <a href="#About" class="about_scroll" aria-label="Scroll down to About section">Scroll Down <span class="hero-arrow">&#8595;</span></a>
         </div>
     </main>
     <!-- Hero Section End -->
 
     <!-- About section Start -->
     <section id="About" class="about-section">
-        <div class="about-inner-container">
+        <div class="about-inner-container reveal">
             <div class="left-about">
                 <h2>About</h2>
                 <div class="about-context">
@@ -52,7 +97,7 @@
                 </div>
             </div>
             <div class="right-about">
-                <img src="./Assets/Img/CoffeeDoddle.svg" alt="Coffee Image">
+                <img src="./Assets/Img/CoffeeDoddle.svg" alt="Illustration of a coffee cup" width="360" height="360">
             </div>
         </div>
             
@@ -60,43 +105,43 @@
     <!-- About section End -->
     
     <!-- Works Start -->
-    <section class="work-section">
+    <section id="Work" class="work-section">
         <div class="middle-work-section">
             <h2>Work</h2>
             <p class="work-subheader">Selected projects</p>
              <div class="work-content">
-                <div class="card">
+                <div class="card reveal">
                     <div class="card-image">
-                        <a href="https://processwithturnkey.com/" target="_blank">
-                            <img src="./Assets/Img/TK_heroimage.png" alt="TK Image">
+                        <a href="https://processwithturnkey.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit TurnKey process website">
+                            <img src="./Assets/Img/TK_heroimage.png" alt="TurnKey process homepage screenshot" loading="lazy" decoding="async">
                         </a>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card reveal">
                     <div class="card-image">
-                        <a href="https://pennylanepub.net/" target="_blank">
-                            <img src="./Assets/Img/PennyHeroImage.png" alt="PennyLane Image">
+                        <a href="https://pennylanepub.net/" target="_blank" rel="noopener noreferrer" aria-label="Visit Penny Lane Pub website">
+                            <img src="./Assets/Img/PennyHeroImage.png" alt="Penny Lane Pub homepage screenshot" loading="lazy" decoding="async">
                         </a>
                     </div>
                 </div> 
-                <div class="card col2">
+                <div class="card col2 reveal">
                     <div class="card-image">
-                        <a href="https://culnova.com/" target="_blank">
-                            <img src="./Assets/Img/CulnovaHeroImage.png" alt="Lusso Image">
+                        <a href="https://culnova.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit Culnova website">
+                            <img src="./Assets/Img/CulnovaHeroImage.png" alt="Culnova homepage screenshot" loading="lazy" decoding="async">
                         </a>
                     </div>
                 </div>
-                <div class="card col2">
+                <div class="card col2 reveal">
                     <div class="card-image">
-                        <a href="https://villavivadavao.com/" target="_blank">
-                            <img src="./Assets/Img/VivaHeroImage.png" alt="VillaViva Image">
+                        <a href="https://villavivadavao.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit Villa Viva Davao website">
+                            <img src="./Assets/Img/VivaHeroImage.png" alt="Villa Viva Davao homepage screenshot" loading="lazy" decoding="async">
                         </a>
                     </div>
                 </div>
-                <div class="card col2">
+                <div class="card col2 reveal">
                     <div class="card-image">
-                        <a href="https://remoteteamfinder.com/" target="_blank">
-                            <img src="./Assets/Img/RTFHeroImage.png" alt="VillaViva Image">
+                        <a href="https://remoteteamfinder.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit Remote Team Finder website">
+                            <img src="./Assets/Img/RTFHeroImage.png" alt="Remote Team Finder homepage screenshot" loading="lazy" decoding="async">
                         </a>
                     </div>
                 </div>
@@ -106,28 +151,28 @@
     <!-- Works End -->
 
     <!-- Skills Start -->
-    <section class="skills-section">
+    <section id="Skills" class="skills-section">
         <div class="skills-container">
             <h3>Skills</h3>
             <p class="skills-subheader">What I can offer</p>
             <div class="skills-card-container">
-                <div class="skills-card">
-                    <img src="./Assets/Icons/web-programming.png" alt="web dev icon">
+                <div class="skills-card reveal">
+                    <img src="./Assets/Icons/web-programming.png" alt="Web development icon" loading="lazy" decoding="async">
                     <h5>Web Development</h5>
                     <p>Transforming visions into digital reality, I specialize in web development that captivates and innovates. From sleek interfaces to robust functionalities, I craft dynamic websites tailored to your unique needs..</p>
                 </div>
-                <div class="skills-card">
-                    <img src="./Assets/Icons/web-design.png" alt="web design icon">
+                <div class="skills-card reveal">
+                    <img src="./Assets/Icons/web-design.png" alt="Web design icon" loading="lazy" decoding="async">
                     <h5>Web Design</h5>
                     <p>Elevate your online presence with my captivating web designs. Blending creativity and functionality, I craft visually stunning interfaces tailored to your brand. Let's bring your vision to life today.</p>
                 </div>
-                <div class="skills-card">
-                    <img src="./Assets/Icons/seo.png" alt="seo icon">
+                <div class="skills-card reveal">
+                    <img src="./Assets/Icons/seo.png" alt="SEO icon" loading="lazy" decoding="async">
                     <h5>SEO</h5>
                     <p>Maximize your online presence with my expert SEO services. I'll optimize your site for higher rankings and increased visibility. Let's elevate your digital strategy together.</p>
                 </div>
-                <div class="skills-card">
-                    <img src="./Assets/Icons/domain.png" alt="domain icon">
+                <div class="skills-card reveal">
+                    <img src="./Assets/Icons/domain.png" alt="Domain management icon" loading="lazy" decoding="async">
                     <h5>Domain Management</h5>
                     <p>Simplify your online world with my domain expertise. From registration to configuration, I ensure smooth operations for your web assets. Let's keep your domains in perfect order.</p>
                 </div>
@@ -140,15 +185,15 @@
     <footer class="contact-section" id="contact-section">
         <div class="inner-contact">
             <div class="left-contact">
-                <p>© 2023 Chebb Jenson Magallano <br>
-                    <span>Fueled by Java Chip</span> </p>
+                <p>© <span id="year">2026</span> Chebb Jenson Magallano <br>
+                    <span>Fueled by Salted Coffee</span> </p>
             </div>
             <div class="right-contact">
                 <h2>Get in touch with me.</h2>
                 <ul class="right-container-list">
-                    <li><a href="https://www.linkedin.com/in/chebbm/" target="_blank">Linkedin↗</a></li>
-                    <li><a href="https://drive.google.com/file/d/1C0qPZI37gGOHAZaD30dm-w6ZxVHQ9xyE/view?usp=sharing" target="_blank">Resume↗</a></li>
-                    <li><a href="mailto:chebbv@gmail.com" target="_blank">Email↗</a></li>
+                    <li><a href="https://www.linkedin.com/in/chebbm/" target="_blank" rel="noopener noreferrer">Linkedin↗</a></li>
+                    <li><a href="https://drive.google.com/file/d/1C0qPZI37gGOHAZaD30dm-w6ZxVHQ9xyE/view?usp=sharing" target="_blank" rel="noopener noreferrer">Resume↗</a></li>
+                    <li><a href="mailto:chebbv@gmail.com" target="_blank" rel="noopener noreferrer">Email↗</a></li>
                     <!-- <li><a href="https://wa.me/+971557838326" target="_blank">WhatsApp↗</a></li> -->
                 </ul>
             </div>

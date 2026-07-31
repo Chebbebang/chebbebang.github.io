@@ -1,48 +1,67 @@
 
-# Portfolio
+# Chebby — Personal Portfolio
 
-This repository hosts the source code for the personal website of Chebbebang. The website showcases projects, contacts, and other information the owner.
+The source code for the personal website of Chebb Jenson Magallano. A responsive single-page portfolio showcasing projects, skills, and contact information. Live at **https://chebby.github.io/**.
 
-You can customize and use this as a template for your own portfolio.
 ## Features
 
-- Toggle button
-- Simple Static Page
-- Cross platform
-- More to come...
+- Single-page portfolio: hero, about, work, skills, contact
+- Professional navy + blue design with soft shadows and rounded cards
+- Fixed navigation with active-section highlighting
+- Scroll-reveal animations (respects `prefers-reduced-motion`, safe when JS is disabled)
+- Zero JavaScript dependencies — vanilla JS only (jQuery removed)
+- SEO: meta description, Open Graph, Twitter Card, JSON-LD structured data
+- Accessibility: skip link, semantic HTML, focus-visible styles, descriptive alt text
+- Lazy-loaded images, responsive across desktop/tablet/mobile
 
+## Tech Stack
+
+- HTML5
+- CSS3 (custom properties, CSS grid, media queries)
+- Vanilla JavaScript (ES5-compatible, IntersectionObserver)
 
 ## Getting Started
 
-To get started with this repository, you can clone it locally using the following command:
-
-
 ```bash
-git clone https://github.com/Chebbebang/chebbebang.github.io.git
+git clone https://github.com/Chebbebang/chebby.github.io.git
 ```
 
-After cloning the repository, you can open the index.html file in your preferred web browser to view the website.
+Then simply open `index.html` in a browser, or serve it locally:
 
+```bash
+npx serve .
+```
+
+## Project Structure
+
+```
+.
+├── index.html          # Page markup (hero, about, work, skills, contact)
+├── style.css           # All styles (design tokens in :root)
+├── script.js           # Vanilla JS: smooth scroll, reveals, active nav, year
+├── Assets/
+│   ├── Files/          # Resume & CV PDFs
+│   ├── Icons/          # Skill card icons
+│   └── Img/            # Project screenshots & illustrations
+├── AGENTS.md           # Guidelines for AI coding agents
+└── README.md
+```
 
 ## Demo
 
-You can view it in this link:
-
-https://chebbebang.github.io/
-
+https://chebby.github.io/
 
 ## Contributing
 
-Contributions to this repository are welcome. If you would like to contribute, please fork the repository, make your changes, and submit a pull request. Be sure to follow any contribution guidelines specified in the repository.
+Contributions are welcome. Please fork the repository, make your changes, and submit a pull request.
 
 ## License
 
-The code in this repository is distributed under the [MIT](https://choosealicense.com/licenses/mit/) License. You can find the full text of the license in the LICENSE file.
+Distributed under the [MIT](https://choosealicense.com/licenses/mit/) License. See the LICENSE file.
 
+## Links
 
-## 🔗 Links
-[![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://chebbebang.github.io/)
+[![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://chebby.github.io/)
 [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/chebbm/)
 
-Thank you for visiting the chebbebang.github.io repository! We hope you enjoy exploring the website.
-
+Thank you for visiting the chebby.github.io repository!
