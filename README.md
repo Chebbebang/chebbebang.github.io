@@ -1,7 +1,7 @@
 
-# Chebby — Personal Portfolio
+# chebbebang — Personal Portfolio
 
-The source code for the personal website of Chebb Jenson Magallano. A responsive single-page portfolio showcasing projects, skills, and contact information. Live at **https://chebby.github.io/**.
+The source code for the personal website of Chebb Jenson Magallano. A responsive single-page portfolio showcasing projects, skills, and contact information. Live at **https://chebbebang.github.io/**.
 
 ## Features
 
@@ -23,7 +23,7 @@ The source code for the personal website of Chebb Jenson Magallano. A responsive
 ## Getting Started
 
 ```bash
-git clone https://github.com/Chebbebang/chebby.github.io.git
+git clone https://github.com/Chebbebang/chebbebang.github.io.git
 ```
 
 Then simply open `index.html` in a browser, or serve it locally:
@@ -49,7 +49,7 @@ npx serve .
 
 ## Demo
 
-https://chebby.github.io/
+https://chebbebang.github.io/
 
 ## Contributing
 
@@ -61,7 +61,7 @@ Distributed under the [MIT](https://choosealicense.com/licenses/mit/) License. S
 
 ## Links
 
-[![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://chebby.github.io/)
+[![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://chebbebang.github.io/)
 [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/chebbm/)
 
-Thank you for visiting the chebby.github.io repository!
+Thank you for visiting the chebbebang.github.io repository!
